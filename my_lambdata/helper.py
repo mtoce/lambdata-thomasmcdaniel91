@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv(r"C:\Users\Thomas\Datasets\Islander_data.csv")
+df = pd.read_csv('https://raw.githubusercontent.com/mtoce/Build2-Project/master/astros_bangs_20200127.csv')
 names = list(df['last_name'])
 
 
