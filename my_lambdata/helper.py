@@ -1,6 +1,6 @@
 import pandas as pd
 df = pd.read_csv('https://raw.githubusercontent.com/mtoce/Build2-Project/master/astros_bangs_20200127.csv')
-names = list(df['last_name'])
+names = list(df['game_date'])
 
 
 class Additions():
@@ -17,4 +17,4 @@ class Additions():
 if __name__ == "__main__":
     new_df = Additions(df, names, 'last')
     new_df = new_df.exten_df(df, names, 'last')
-    print(new_df.head())
+    print(new_df['last'])
